@@ -1,16 +1,61 @@
 html {
   --baseHSL: hsl(var(--baseHue), 100%, 25%);
-  --secondaryHSL: hsl(calc(var(--baseHue) - 180), 100%, 25%);
+  --HSL-30: hsl(calc(var(--baseHue) + 30), 100%, 25%);
+  --HSL-60: hsl(calc(var(--baseHue) + 60), 100%, 25%);
+  --HSL-90: hsl(calc(var(--baseHue) + 90), 100%, 25%);
+  --HSL-120: hsl(calc(var(--baseHue) + 120), 100%, 25%);
+  --HSL-150: hsl(calc(var(--baseHue) + 150), 100%, 25%);
+  --HSL-180: hsl(calc(var(--baseHue) + 180), 100%, 25%);
+  --HSL-210: hsl(calc(var(--baseHue) + 210), 100%, 25%);
+  --HSL-240: hsl(calc(var(--baseHue) + 240), 100%, 25%);
+  --HSL-270: hsl(calc(var(--baseHue) + 270), 100%, 25%);
+  --HSL-300: hsl(calc(var(--baseHue) + 300), 100%, 25%);
+  --HSL-330: hsl(calc(var(--baseHue) + 330), 100%, 25%);
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 div {
   width: 200px;
   height: 200px;
+  margin: 20px;
   border-radius: 1em;
   border: medium solid #333;
   background-color: var(--baseHSL);
-  margin-top: 100px;
-  margin-left: 100px;
 }
-div + div {
-  background-color: var(--secondaryHSL);
+div:nth-child(2) {
+  background-color: var(--HSL-30);
+}
+div:nth-child(3) {
+  background-color: var(--HSL-60);
+}
+div:nth-child(4) {
+  background-color: var(--HSL-90);
+}
+div:nth-child(5) {
+  background-color: var(--HSL-120);
+}
+div:nth-child(6) {
+  background-color: var(--HSL-150);
+}
+div:nth-child(7) {
+  background-color: var(--HSL-180);
+}
+div:nth-child(8) {
+  background-color: var(--HSL-210);
+}
+div:nth-child(9) {
+  background-color: var(--HSL-240);
+}
+div:nth-child(10) {
+  background-color: var(--HSL-270);
+}
+div:nth-child(11) {
+  background-color: var(--HSL-300);
+}
+div:nth-child(12) {
+  background-color: var(--HSL-330);
 }
