@@ -1,9 +1,14 @@
+html {
+}
 div {
   width: 200px;
   height: 200px;
   border-radius: 1em;
   border: medium solid #333;
-  background-color: var(--baseHSL);
+  background-color: hsl(var(--baseHue), 100%, 25%);
   margin-top: 100px;
   margin-left: 100px;
+}
+div + div {
+  background-color: hsl(calc(var(--baseHue) - 180), 100%, 25%);
 }
