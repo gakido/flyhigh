@@ -17,7 +17,7 @@ style.setProperty("--baseSat", initialBaseSat);
 window.addEventListener("resize", updateStyle);
 
 function updateStyle() {
-  newWidth = 204 - (initialWidth - window.innerWidth);
+  newWidth = initialBaseHue - (initialWidth - window.innerWidth);
   style.setProperty("--baseHue", newWidth);
 }
 
