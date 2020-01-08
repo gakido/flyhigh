@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <style>
-      .box {
-        width: var(--w, 500px);
-        height: var(--h, 500px);
-        background-color: tomato;
+      div {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        background-color: var(--baseHSL);
         margin-top: 100px;
         margin-left: 100px;
       }
     </style>
   </head>
   <body>
-    <div class="box"></div>
+    <div></div>
   </body>
   <script>
-
+    const initialBaseHue = 204;
+    const initialWidth = window.innerWidth;
+    // const initialHeight = window.innerHeight;
     let style = document.documentElement.style;
-    let initialWidth = Math.round(window.innerWidth);
-    let initialHeight = Math.round(window.innerHeight);
+    style.setProperty("--baseHSL", `hsl(${initialBaseHue}, 100%, 25%)`);
 
-    function updateStyle(initialWidth, initialHeight) {
-      let w = Math.round(window.innerWidth / 3);
-      let h = Math.round(window.innerHeight / 3);
+    function updateStyle() {
+      newWidth = 204 - (initialWidth - window.innerWidth);
+
       // let size = `Width: ${w}, Height: ${h}`;
       // document.getElementById("result").innerHTML = size;
-      style.setProperty('--w', `${w}px`);
-      style.setProperty('--h', `${w}px`);
-      // console.log(size);
+
+      style.setProperty("--baseHSL", `hsl(${newWidth}, 100%, 25%)`);
+      // style.setProperty("--h", `${newWidth}px`);
+      // console.log(newWidth);
     }
 
-    window.addEventListener('resize', updateStyle);
-
+    window.addEventListener("resize", updateStyle);
   </script>
 </html>
