@@ -2,38 +2,11 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <style>
-      div {
-        width: 200px;
-        height: 200px;
-        border: 1px solid black;
-        background-color: var(--baseHSL);
-        margin-top: 100px;
-        margin-left: 100px;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="scripts.js"></script>
   </head>
   <body>
     <div></div>
+    <div></div>
   </body>
-  <script>
-    const initialBaseHue = 204;
-    const initialWidth = window.innerWidth;
-    // const initialHeight = window.innerHeight;
-    let style = document.documentElement.style;
-    style.setProperty("--baseHSL", `hsl(${initialBaseHue}, 100%, 25%)`);
-
-    function updateStyle() {
-      newWidth = 204 - (initialWidth - window.innerWidth);
-
-      // let size = `Width: ${w}, Height: ${h}`;
-      // document.getElementById("result").innerHTML = size;
-
-      style.setProperty("--baseHSL", `hsl(${newWidth}, 100%, 25%)`);
-      // style.setProperty("--h", `${newWidth}px`);
-      // console.log(newWidth);
-    }
-
-    window.addEventListener("resize", updateStyle);
-  </script>
 </html>
