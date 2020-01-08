@@ -1,16 +1,16 @@
 html {
-  --baseHSL: hsl(var(--baseHue), 100%, 25%);
-  --HSL-30: hsl(calc(var(--baseHue) + 30), 100%, 25%);
-  --HSL-60: hsl(calc(var(--baseHue) + 60), 100%, 25%);
-  --HSL-90: hsl(calc(var(--baseHue) + 90), 100%, 25%);
-  --HSL-120: hsl(calc(var(--baseHue) + 120), 100%, 25%);
-  --HSL-150: hsl(calc(var(--baseHue) + 150), 100%, 25%);
-  --HSL-180: hsl(calc(var(--baseHue) + 180), 100%, 25%);
-  --HSL-210: hsl(calc(var(--baseHue) + 210), 100%, 25%);
-  --HSL-240: hsl(calc(var(--baseHue) + 240), 100%, 25%);
-  --HSL-270: hsl(calc(var(--baseHue) + 270), 100%, 25%);
-  --HSL-300: hsl(calc(var(--baseHue) + 300), 100%, 25%);
-  --HSL-330: hsl(calc(var(--baseHue) + 330), 100%, 25%);
+  --baseHSL: hsl(var(--baseHue), var(--baseLum), var(--baseSat));
+  --HSL-30: hsl(calc(var(--baseHue) + 30), var(--baseLum), var(--baseSat));
+  --HSL-60: hsl(calc(var(--baseHue) + 60), var(--baseLum), var(--baseSat));
+  --HSL-90: hsl(calc(var(--baseHue) + 90), var(--baseLum), var(--baseSat));
+  --HSL-120: hsl(calc(var(--baseHue) + 120), var(--baseLum), var(--baseSat));
+  --HSL-150: hsl(calc(var(--baseHue) + 150), var(--baseLum), var(--baseSat));
+  --HSL-180: hsl(calc(var(--baseHue) + 180), var(--baseLum), var(--baseSat));
+  --HSL-210: hsl(calc(var(--baseHue) + 210), var(--baseLum), var(--baseSat));
+  --HSL-240: hsl(calc(var(--baseHue) + 240), var(--baseLum), var(--baseSat));
+  --HSL-270: hsl(calc(var(--baseHue) + 270), var(--baseLum), var(--baseSat));
+  --HSL-300: hsl(calc(var(--baseHue) + 300), var(--baseLum), var(--baseSat));
+  --HSL-330: hsl(calc(var(--baseHue) + 330), var(--baseLum), var(--baseSat));
 }
 
 body {
