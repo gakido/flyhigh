@@ -10,9 +10,7 @@ const initialHeight = window.innerHeight;
 
 // inject base hue as a custom property on the <HTML> element
 let style = document.documentElement.style;
-style.setProperty("--baseHue", initialBaseHue);
-style.setProperty("--baseLum", `${Math.round(initialBaseLum / denominator)}%`);
-style.setProperty("--baseSat", `${Math.round(initialBaseSat / denominator)}%`);
+updateStyle();
 
 // listen for window resize
 window.addEventListener("resize", updateStyle);
