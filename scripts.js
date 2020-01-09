@@ -8,11 +8,11 @@ const denominator = 10;
 const initialWidth = window.innerWidth;
 const initialHeight = window.innerHeight;
 
-// inject base hue as a custom property on the <HTML> element
+// inject base values as custom properties on the <HTML> element
 let style = document.documentElement.style;
 updateStyle();
 
-// listen for window resize
+// listen for window resize and adjust values accordingly
 window.addEventListener("resize", updateStyle);
 
 function updateStyle() {
@@ -27,5 +27,3 @@ function updateStyle() {
 // let size = `Width: ${w}, Height: ${h}`;
 // document.getElementById("result").innerHTML = size;
 // document.getElementsByClassName
-// style.setProperty("--h", `${newWidth}px`);
-// console.log(newWidth);
