@@ -17,8 +17,8 @@ style.setProperty("--baseSat", `${initialBaseSat}%`);
 window.addEventListener("resize", updateStyle);
 
 function updateStyle() {
-  newWidth = initialBaseHue - (initialWidth - window.innerWidth);
-  style.setProperty("--baseHue", newWidth);
+  newHue = initialBaseHue - (initialWidth - window.innerWidth);
+  style.setProperty("--baseHue", newHue);
 }
 
 // let size = `Width: ${w}, Height: ${h}`;
