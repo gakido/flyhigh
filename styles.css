@@ -13,49 +13,76 @@ html {
   --HSL-330: hsl(calc(var(--baseHue) + 330), var(--baseLum), var(--baseSat));
 }
 
-body {
+body,
+body > div {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-div {
-  width: 100px;
-  height: 100px;
-  margin: 20px;
-  border-radius: 1em;
-  border: medium solid #333;
+div div {
+  flex: 1;
+  width: 9.5vw;
+  height: 9.5vw;
   background-color: var(--baseHSL);
 }
-div:nth-child(2) {
+div:nth-child(2) div {
   background-color: var(--HSL-30);
 }
-div:nth-child(3) {
+div:nth-child(3) div {
   background-color: var(--HSL-60);
 }
-div:nth-child(4) {
+div:nth-child(4) div {
   background-color: var(--HSL-90);
 }
-div:nth-child(5) {
+div:nth-child(5) div {
   background-color: var(--HSL-120);
 }
-div:nth-child(6) {
+div:nth-child(6) div {
   background-color: var(--HSL-150);
 }
-div:nth-child(7) {
+div:nth-child(7) div {
   background-color: var(--HSL-180);
 }
-div:nth-child(8) {
+div:nth-child(8) div {
   background-color: var(--HSL-210);
 }
-div:nth-child(9) {
+div:nth-child(9) div {
   background-color: var(--HSL-240);
 }
-div:nth-child(10) {
+div:nth-child(10) div {
   background-color: var(--HSL-270);
 }
-div:nth-child(11) {
+div:nth-child(11) div {
   background-color: var(--HSL-300);
 }
-div:nth-child(12) {
+div:nth-child(12) div {
   background-color: var(--HSL-330);
+}
+
+div div:nth-child(2) {
+  opacity: 0.9;
+}
+div div:nth-child(3) {
+  opacity: 0.8;
+}
+div div:nth-child(4) {
+  opacity: 0.7;
+}
+div div:nth-child(5) {
+  opacity: 0.6;
+}
+div div:nth-child(6) {
+  opacity: 0.5;
+}
+div div:nth-child(7) {
+  opacity: 0.4;
+}
+div div:nth-child(8) {
+  opacity: 0.3;
+}
+div div:nth-child(9) {
+  opacity: 0.2;
+}
+div div:nth-child(10) {
+  opacity: 0.1;
 }
