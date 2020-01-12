@@ -16,12 +16,12 @@ updateStyle()
 window.addEventListener("resize", updateStyle)
 
 function updateStyle() {
-  newHue = initialBaseHue - (initialWidth - window.innerWidth);
-  newLum = initialBaseLum + (initialHeight - window.innerHeight);
-  newSat = initialBaseSat + (initialHeight - window.innerHeight);
+  newHue = initialBaseHue - (initialWidth - window.innerWidth)
+  newSat = initialBaseSat + (initialHeight - window.innerHeight)
+  newLum = initialBaseLum + (initialHeight - window.innerHeight)
   style.setProperty("--baseHue", newHue);
-  style.setProperty("--baseLum", `${Math.round(newLum / denominator)}%`);
-  style.setProperty("--baseSat", `${Math.round(newSat / denominator)}%`);
+  style.setProperty("--baseSat", `${Math.round(newSat / denominator)}%`)
+  style.setProperty("--baseLum", `${Math.round(newLum / denominator)}%`)
 }
 
 // let size = `Width: ${w}, Height: ${h}`;
