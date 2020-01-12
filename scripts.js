@@ -1,8 +1,8 @@
-// set initial base hue to PANTONE™ 2020 Color of the Year (Classic Blue)
-const initialBaseHue = 204;
-const initialBaseLum = 1000;
-const initialBaseSat = 250;
-const denominator = 10;
+// set initial base hue to PANTONE™ 2020 Color of the Year (Classic Blue) #0F4C81
+const initialBaseHue = 208
+const initialBaseSat = 792
+const initialBaseLum = 282
+const denominator = 10
 
 // fetch browser window base dimensions
 const initialWidth = window.innerWidth;
