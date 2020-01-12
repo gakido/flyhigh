@@ -5,15 +5,15 @@ const initialBaseLum = 282
 const denominator = 10
 
 // fetch browser window base dimensions
-const initialWidth = window.innerWidth;
-const initialHeight = window.innerHeight;
+const initialWidth = window.innerWidth
+const initialHeight = window.innerHeight
 
 // inject base values as custom properties on the <HTML> element
-let style = document.documentElement.style;
-updateStyle();
+let style = document.documentElement.style
+updateStyle()
 
 // listen for window resize and adjust values accordingly
-window.addEventListener("resize", updateStyle);
+window.addEventListener("resize", updateStyle)
 
 function updateStyle() {
   newHue = initialBaseHue - (initialWidth - window.innerWidth);
